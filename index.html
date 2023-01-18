@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fullpage-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.css"
+      integrity="sha512-joJLRX4chQYCQlk0R4FXEgZHqsWA1hf4e+C+QKyi8fnfDm8FlEsNAVo+ByQhD19BrgVZGSOJKAQZa5M5gXDtpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="menu">Menu</div>
+    <div id="fullpage">
+      <div class="section s1">
+        <header class="title">
+          <p>Lorem Impsum</p>
+        </header>
+        <div class="images">
+          <img
+            class="img_left_1"
+            src="./images/img_left_1.jpg"
+            width="120rem"
+            height="350rem"
+            alt=""
+          />
+          <img
+            class="img_right_1"
+            src="./images/img_right_1.jpg"
+            width="120rem"
+            height="350rem"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <article>
+            <h1>Alex Mayer</h1>
+            <h2>Photographer</h2>
+            <p>1st/01</p>
+          </article>
+        </div>
+      </div>
+      <div class="section s2">
+        <header class="title">
+          <p>Lorem Impsum</p>
+        </header>
+        <div class="images">
+          <img
+            class="img_left_2"
+            src="./images/img_left_2.jpg"
+            width="120rem"
+            height="350rem"
+            alt=""
+          />
+          <img
+            class="img_right_2"
+            src="./images/img_right_2.jpg"
+            width="120rem"
+            height="350rem"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <article>
+            <h1>Lilly Franco</h1>
+            <h2>Fashion Designer</h2>
+            <p>2nd/02</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- fullpage-js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js"
+      integrity="sha512-rNf09cQHIWzD8BU37lIb3rInygeWXW2hVqJ7niVtTPXWuVR3aFiph1eFIeDiEQV8J45u0qfp7ng8I3TzJHY4Eg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      new fullpage("#fullpage", {
+        autoScrolling: true,
+        scrollingSpeed: 1000,
+        navigation: true,
+        navigationTooltips: ["Alex Mayer", "Lilly Franco"],
+        // navigationTooltips: ["01", "02"],
+        // showActiveTooltip: true,
+      });
+    </script>
+  </body>
+</html>
